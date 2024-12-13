@@ -29,6 +29,10 @@ async function fetchWeather(location) {
 
     displayWeather(locations[0].name);
   } 
+  catch (error) {
+    console.error('Error fetching weather data:', error.message);
+    alert('Unable to fetch data. Please try again later.');
+  }
 }
 
 async function displayWeather(location) {
@@ -74,6 +78,10 @@ async function displayWeather(location) {
       </div>
     `;
   } 
+  catch (error) {
+    console.error('Error fetching current weather:', error.message);
+    alert('Unable to fetch current weather data.');
+  }
 }
 
 fetchWeather("cairo");
