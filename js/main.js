@@ -76,10 +76,7 @@ async function displayWeather(location) {
         </div>
       </div>
     `;
-  } catch (error) {
-    console.error('Error fetching current weather:', error.message);
-    alert('Unable to fetch current weather data.');
-  }
+  } 
 }
 
 fetchWeather("cairo");
