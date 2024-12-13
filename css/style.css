@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f8ff;
+  }
+  .weather-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .weather-card img {
+    max-width: 50px;
+  }
+  #firstfooter {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #secfooter {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .navbar-collapse{
+    flex-grow: 0;
+  }
+
+.icons i:hover{
+    color: blue;
+}
+
+.temp{
+    font-size: 80px;
+    font-weight: 700px;
+}
+
+body{
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
