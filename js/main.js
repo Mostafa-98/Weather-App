@@ -13,7 +13,7 @@ searchInput.addEventListener('input', () => {
 
 
 async function fetchWeather(location) {
-  const url = `http://api.weatherapi.com/v1/search.json?key=29dcee04ade54a57a8a231057240912&q=${location}`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=9b9136a7794e474b8e605455241112&q=${location}&days=7`;
 
   try {
     const response = await fetch(url);
@@ -35,7 +35,7 @@ async function fetchWeather(location) {
 }
 
 async function displayWeather(location) {
-  const url = `http://api.weatherapi.com/v1/current.json?key=29dcee04ade54a57a8a231057240912&q=${location}&aqi=no`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=9b9136a7794e474b8e605455241112&q=${location}&days=7`;
 
   try {
     const response = await fetch(url);
