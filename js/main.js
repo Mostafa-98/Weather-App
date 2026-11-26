@@ -21,13 +21,13 @@ async function fetchWeather(location) {
       throw new Error(`Error: ${response.status}`);
     }
 
-    const locations = await response.json();
-    if (locations.length === 0) {
+    const data = await response.json();
+    if (!data || !data.location) {
       weatherDetails.innerHTML = `<p class="text-danger">No locations found. Try another search.</p>`;
       return;
     }
 
-    displayWeather(locations[0].name);
+    displayWeather(data.location.name);
   } 
   catch (error) {
     console.error('Error fetching weather data:', error.message);
