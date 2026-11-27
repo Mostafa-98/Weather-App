@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav id="firstNav" class="navbar navbar-expand-lg bg-body-tertiary d-block" data-bs-theme="dark">
+    <div class="container p-5">
+      <a class="navbar-brand" href="#">Weather App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-4 ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item pe-4 ">
+            <a onclick="contact()" class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="firstcontent" class="container mt-4 d-block">
+    <!-- Search Box -->
+    <div class="input-group mb-4">
+      <input type="text" id="search-input" class="form-control p-3" placeholder="Enter location">
+      <button id="search-btn" class="btn btn-primary">Search</button>
+    </div>
+
+    <p id="weather-error" class="text-danger d-none"></p>
+
+    <!-- Weather cards are inserted here by js/main.js -->
+    <div id="weather-details" class="row justify-content-center"></div>
+  </div>
+
+  <!-- Footer -->
+  <div class="d-block text-center mt-5" id="firstfooter">
+    <div class="icons mb-3">
+      <a class="text-decoration-none" href="https://github.com/Mostafa-98" target="_blank" rel="noopener">
+        <i class="bg-body-emphasis ps-3 p-3 fs-3 fa-brands fa-github"></i></a>
+      <a class="text-decoration-none" href="https://www.linkedin.com/in/moustafa-elsaqqa/" target="_blank" rel="noopener">
+        <i class="bg-body-emphasis ps-3 p-3 fs-3 fa-brands fa-linkedin-in"></i></a>
+      <a class="text-decoration-none" href="mailto:mostafaelsaqqa79@gmail.com">
+        <i class="bg-body-emphasis ps-3 p-3 fs-3 fa-solid fa-envelope"></i></a>
+    </div>
+    <p>Built by Moustafa Elsaqqa &copy; 2024 · Data by WeatherAPI.com</p>
+  </div>
+
+  <nav id="secNav" class="navbar navbar-expand-lg bg-body-tertiary d-none" data-bs-theme="dark">
+    <div class="container p-5">
+      <a class="navbar-brand" href="#">Weather App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-4 ">
+            <a onclick="home()" class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item pe-4 ">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mt-4 mb-4 d-none" id="secContent">
+    <div class="container">
+      <div class="card w-75 m-auto">
+        <div class="card-body text-center">
+          <img src="./images/banner.png" class="card-img-top w-100" alt="Weather App banner">
+          <h1 class="card-title mt-4">Contact</h1>
+          <p class="card-text mt-3">
+            Weather App is a front-end project by Moustafa Elsaqqa. It shows the current weather and a
+            multi-day forecast for any city using the WeatherAPI.com forecast API.
+          </p>
+          <p>
+            <a href="mailto:mostafaelsaqqa79@gmail.com" class="text-decoration-none text-dark me-3">
+              <i class="fa-regular fa-envelope pe-2"></i>mostafaelsaqqa79@gmail.com</a>
+            <a href="https://github.com/Mostafa-98" target="_blank" rel="noopener" class="text-decoration-none text-dark">
+              <i class="fa-brands fa-github pe-2"></i>github.com/Mostafa-98</a>
+          </p>
+          <a href="mailto:mostafaelsaqqa79@gmail.com?subject=Weather%20App" class="btn btn-primary mt-2">Send Me An Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-none bg-black text-white text-center p-3 mb-0" id="secfooter">
+    <p class="mb-0">Built by Moustafa Elsaqqa &copy; 2024</p>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
