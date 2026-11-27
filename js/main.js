@@ -3,7 +3,7 @@ const searchBtn = document.getElementById('search-btn');
 const weatherDetails = document.getElementById('weather-details');
 const weatherError = document.getElementById('weather-error');
 
-const API_KEY = '9b9136a7794e474b8e605455241112';
+const API_KEY = '8c010918134744b3817211852262711';
 const API_URL = 'https://api.weatherapi.com/v1/forecast.json';
 
 let debounceTimer = null;
